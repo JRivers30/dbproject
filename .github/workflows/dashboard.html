@@ -1,4 +1,3 @@
-<?php include 'display_user_info.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,18 +21,26 @@
     </nav>
 </header>
 <main>
-    <h2>Welcome, <span id="userName"><?php echo $user['Name']; ?></span>!</h2>
-    <div>Email: <span id="userEmail"><?php echo $user['Email']; ?></span></div>
-    <div>Age: <span id="userAge"><?php echo $user['Age']; ?></span> years</div>
-    <div>Gender: <span id="userGender"><?php echo $user['Gender']; ?></span></div>
+    <h2>Welcome there partner <span id="userName">User</span>!</h2>
     <h3>Recent Workouts</h3>
-    <ul id="recentWorkouts">
-        <!-- You can dynamically populate recent workouts using PHP as well -->
-    </ul>
+    <div id="recentWorkouts"></div>
 </main>
 <footer>
-    <p> Swipe right for next page or left for previous</p>
+    swipe to right for next page or left for previous</p>
 </footer>
 <script src="script.js"></script>
+<script>
+    fetch('create_api.php')
+    .then(response => response.json())
+    .then(data => {
+        if (data.status === 'success') {
+            document.getElementById('recentWorkouts').innerHTML = `Last workout on ${data.data.workoutDate}: ${data.data.exercise} - ${data.data.reps} reps`;
+        } else {
+            document.getElementById('recentWorkouts').innerHTML = data.message;
+        }
+    })
+    .catch(error => console.error('Error:', error));
+</script>
 </body>
 </html>
+s

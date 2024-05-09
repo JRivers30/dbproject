@@ -1,0 +1,22 @@
+-doc statement 
+-used this website to help for event lsitenrs and code to swipe to go from page to page https://stackoverflow.com/questions/62823062/adding-a-simple-left-right-swipe-gesture
+-also used this website to help witht the swipe gesture http://www.javascriptkit.com/javatutors/touchevents2.shtml
+-used help from this website to create the style.css help https://www.w3schools.com/html/html_css.asp
+- used thie website to help with the username valdiion for the javascript https://stackoverflow.com/questions/33382595/username-validation-using-javascript-by-document-getelementbyid
+- usd this website to help withthe event listers like the log in and create element and get element id https://developer.mozilla.org/en-US/docs/Web
+- used this website to help me buuld the switch statments with the cases for the event listerner
+- also recieved help from father of jalan (progranner who helped with the script.js for the swipe listener as well as help for the functions to dsiplay user data and fucntions
+- used this youtube video to help with the login https://www.youtube.com/watch?v=fC3j2U_UZrQ
+-used dr coffman notes to help with login and other functions for entering info in database
+- father programmer helped me write js code to be able to grab last previous workout from the databse and display on dashboard
+-used this website for help on the login attemtps and help
+-used this website for help with php files https://www.php.net/manual/en/mysqli.quickstart.statements.php
+-used this website https://www.w3schools.com/php/ to help with php commands and help with database
+-used this website for help to get data from databse and put on html files https://stackoverflow.com/questions/75885991/want-to-fetch-data-from-database-and-display-it-in-html-file
+- https://codeshack.io/secure-login-system-php-mysql/#creatingtheloginformdesign used this website for code for register and login help
+
+
+
+
+
+
