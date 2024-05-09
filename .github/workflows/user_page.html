@@ -1,0 +1,36 @@
+<?php
+@include 'config.php'; // Include the database configuration file
+
+session_start(); // Start or resume a session
+
+// Redirect to the login page if the user is not logged in
+if (!isset($_SESSION['user_name'])) {
+    header('location:login_form.php');
+    exit(); // Don't forget to call exit() after header() to stop further script execution
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Page</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Ensure this path is correct -->
+</head>
+<body>
+   
+<div class="container">
+    <div class="content">
+        <h3>Hi, <span>User</span></h3>
+        <h1>Welcome <span><?php echo htmlspecialchars($_SESSION['user_name']); ?></span></h1> <!-- Use htmlspecialchars to prevent XSS -->
+        <p>This is a user page.</p>
+        <a href="login_form.php" class="btn">Login</a> <!-- Link might not be necessary if the user is already logged in -->
+        <a href="register_form.php" class="btn">Register</a> <!-- Same as above -->
+        <a href="logout.php" class="btn">Logout</a>
+    </div>
+</div>
+
+</body>
+</html>
