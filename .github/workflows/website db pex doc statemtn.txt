@@ -14,7 +14,7 @@
 -used this website https://www.w3schools.com/php/ to help with php commands and help with database
 -used this website for help to get data from databse and put on html files https://stackoverflow.com/questions/75885991/want-to-fetch-data-from-database-and-display-it-in-html-file
 - https://codeshack.io/secure-login-system-php-mysql/#creatingtheloginformdesign used this website for code for register and login help
-
+- also used https://codeshack.io/secure-login-system-php-mysql/#creatingtheloginformdesign for help on styles.css files for login and register pages
 
 
 
